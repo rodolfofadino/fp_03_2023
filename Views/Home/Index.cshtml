@@ -1,0 +1,15 @@
+﻿@model Pessoa
+
+
+<h1>Home @ViewData["Nome"] @(((DateTime)ViewBag.Horario).Year)  @ViewData["Horario"] </h1>
+<p>Welcome to ASP.NET MVC!</p>
+
+<h2>
+    Meu cadastro
+</h2>
+<p>
+    @Model.Nome
+    <br />
+    @Model.DataDeInicio.Year
+</p>
+
