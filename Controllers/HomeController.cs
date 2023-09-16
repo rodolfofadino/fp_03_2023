@@ -5,6 +5,13 @@ namespace fiap.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpPost]
+        public IActionResult Pessoa([FromBody]Pessoa model)
+        {
+
+            
+            return Ok();
+        }
         
         public IActionResult Index() {
 

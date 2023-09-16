@@ -1,0 +1,15 @@
+﻿@using fiap.ViewComponents;
+@model IEnumerable<Noticia>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li style="background-color:red;">
+            <h3> @item.Titulo</h3>
+            <img src="@item.Imagem">
+            
+        </li>
+    }
+
+    
+</ul>

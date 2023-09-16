@@ -10,6 +10,13 @@
 <p>
     @Model.Nome
     <br />
-    @Model.DataDeInicio.Year
+    @Model.DataDeInicio?.Year
 </p>
 
+
+@*@await Component.InvokeAsync("Noticias", new { total=4, noticiasUrgentes=true})*@
+
+<vc:noticias total="2" noticias-urgentes="false" categoria="esportes" ></vc:noticias>
+
+
+<img src="~/giphy.gif" />
