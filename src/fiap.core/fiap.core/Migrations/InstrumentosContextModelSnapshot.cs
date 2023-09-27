@@ -2,20 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using fiap.Contexts;
+using fiap.core.Contexts;
 
 #nullable disable
 
-namespace fiap.Migrations
+namespace fiap.core.Migrations
 {
     [DbContext(typeof(InstrumentosContext))]
-    [Migration("20230916144341_AddremovedFlagToInstruments")]
-    partial class AddremovedFlagToInstruments
+    partial class InstrumentosContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,7 +21,7 @@ namespace fiap.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("fiap.Models.Instrumento", b =>
+            modelBuilder.Entity("fiap.core.Models.Instrumento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

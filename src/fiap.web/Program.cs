@@ -1,6 +1,6 @@
 ﻿
 
-using fiap.Contexts;
+using fiap.core.Contexts;
 using fiap.Middlewares;
 using Microsoft.EntityFrameworkCore;
 

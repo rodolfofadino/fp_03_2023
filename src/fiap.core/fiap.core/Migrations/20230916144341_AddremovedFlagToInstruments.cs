@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace fiap.Migrations
+namespace fiap.core.Migrations
 {
     /// <inheritdoc />
     public partial class AddremovedFlagToInstruments : Migration

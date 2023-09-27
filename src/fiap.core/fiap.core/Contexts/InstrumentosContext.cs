@@ -1,7 +1,7 @@
-﻿using fiap.Models;
+﻿using fiap.core.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace fiap.Contexts
+namespace fiap.core.Contexts
 {
 
     public class InstrumentosContext : DbContext

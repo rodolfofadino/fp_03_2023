@@ -8,8 +8,6 @@ namespace fiap.Controllers
         [HttpPost]
         public IActionResult Pessoa([FromBody]Pessoa model)
         {
-
-            
             return Ok();
         }
         

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace fiap.Models
+namespace fiap.core.Models
 {
     public class Instrumento
     {

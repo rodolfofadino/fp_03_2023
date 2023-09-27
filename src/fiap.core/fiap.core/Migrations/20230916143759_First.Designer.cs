@@ -2,17 +2,20 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using fiap.Contexts;
+using fiap.core.Contexts;
 
 #nullable disable
 
-namespace fiap.Migrations
+namespace fiap.core.Migrations
 {
     [DbContext(typeof(InstrumentosContext))]
-    partial class InstrumentosContextModelSnapshot : ModelSnapshot
+    [Migration("20230916143759_First")]
+    partial class First
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,7 +24,7 @@ namespace fiap.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("fiap.Models.Instrumento", b =>
+            modelBuilder.Entity("fiap.core.Models.Instrumento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -45,9 +48,6 @@ namespace fiap.Migrations
 
                     b.Property<decimal>("Preco")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<bool>("Removed")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
